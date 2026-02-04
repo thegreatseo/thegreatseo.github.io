@@ -1,3 +1,8 @@
+html {
+  /* Default is usually 16px. 18px or 110% makes a big difference. */
+  font-size: 112%; 
+}
+
 .pub-row {
   display: flex; 
   align-items: center;}
@@ -216,7 +221,7 @@ papertitle {
 
       .image.avatar img {
         border-radius: 100%;
-        width: 45%;
+        width: 80%;
         padding: 20px;
         // border: 1px solid #ddd;
         // padding: 3px;
@@ -225,7 +230,7 @@ papertitle {
 
     #header .image.avatar {
       margin: 0 0 1em 0;
-      width: 8.00em;
+      width: 10.00em;
     }
 
 h3, h4, h5, h6 {
@@ -266,7 +271,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size: 2rem;
 }
 
 a {
@@ -296,7 +301,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:960px;
+  width:1100px;
   margin:0 auto;
 }
 
@@ -356,7 +361,7 @@ img {
 }
 
 header {
-  width:232px;
+  width:280px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -426,13 +431,13 @@ header ul li + li + li {
 }
 
 header ul a strong {
-  font-size:14px;
+  font-size:0.9rem;
   display:block;
   color:#222;
 }
 
 section {
-  width:650px;
+  width:720px;
   float:right;
   padding-top:4.0em;
   padding-bottom:50px;
@@ -500,8 +505,8 @@ footer {
 
    .image.avatar img {
         border-radius: 100%;
-        width: 117px;
-        padding:20px;
+        width: 150px;
+        padding: 20px;
       }
   #head1o2 {
     visibility: hidden;
