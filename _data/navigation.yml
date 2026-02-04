@@ -1,0 +1,15 @@
+main:
+- title: "Home"
+  url: /
+
+- title: "Talks"
+  url: /talks/
+
+- title: "Teaching"
+  url: /teaching/
+
+- title: "Service"
+  url: /service/
+
+- title: "More"
+  url: /more/

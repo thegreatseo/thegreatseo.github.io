@@ -1,0 +1,21 @@
+- Teaching Assistant, Yonsei University (Mar 2023 – Dec 2025) 
+    - Combinatorics (Fall 2025) 
+    - Discrete Mathematics (Spring 2025) 
+    - Combinatorics (Fall 2024) 
+    - Discrete Mathematics, Probability (Spring 2024) 
+    - Linear Algebra (2) (Fall 2023) 
+    - Mathematics and Programming (Spring 2023) 
+
+- Teaching Assistant, Korea Advanced Institute of Science and Technology (Mar 2020 – Aug 2022) 
+    - Probability and Statistics, Scientific Writing (Spring 2022) 
+    - Calculus 1, Introduction to Graph Theory (Fall 2021) 
+    - Introduction to Linear Algebra, Introduction to Number Theory (Spring 2021) 
+    - Differential Equations and Applications, Introduction to Differential Geometry (Fall 2020) 
+    - Differential Equations and Applications (Spring 2020) 
+
+- Excellent Student Teaching Assistant, Pohang University of Science and Technology (Mar 2019 – Dec 2019) 
+    - Calculus 2 (Fall 2019) 
+    - Calculus 1 (Spring 2019) 
+
+- Teaching Assistant, KAIST Cyber Gifted Education (Oct 2016 – Feb 2017) 
+    - Introduction to Number Theory, Linear Algebra (Fall 2016)

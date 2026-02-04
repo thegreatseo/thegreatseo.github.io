@@ -6,9 +6,9 @@ email: jaehyeonseo@yonsei.ac.kr
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: minimal light
-description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-canonical: https://minimal-light-theme.yliu.me/
+keywords: combinatorics graph theory
+description: Jaehyeon Seo is a mathematics PhD student in Yonsei University, working in extremal combinatorics and graph theory.
+# canonical: https://minimal-light-theme.yliu.me/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
@@ -20,13 +20,13 @@ linkedin: https://www.linkedin.com/in/jaehyeon-seo-3a72a5141/
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/portrait.jpg
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
+avatar: /assets/img/portrait.jpg
+favicon: /assets/img/favicon.png
+favicon_dark: /assets/img/favicon-dark.png
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
-enable_footnote: true
+# enable_footnote: true
 
 # Auto Dark Mode
 # You may use the option to disable the automatic dark theme
