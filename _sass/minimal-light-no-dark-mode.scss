@@ -91,12 +91,12 @@ strong {
 
 /* --- Layout Wrappers --- */
 .wrapper {
-  width: 1100px;
+  width: min(1100px, 95%);
   margin: 0 auto;
 }
 
 header {
-  width: 280px;
+  width: min(280px, 25%);
   float: left;
   position: fixed;
   padding-top: 4.0em;
@@ -104,7 +104,7 @@ header {
 }
 
 section {
-  width: 720px;
+  width: min(720px, 90% - min(280px, 25%));
   float: right;
   padding-top: 4.0em;
   padding-bottom: 50px;
