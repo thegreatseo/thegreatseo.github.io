@@ -37,7 +37,7 @@
       <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
       {% endif %}
       {% if link.notes %} 
-      <span class="notes">{{ link.notes }}</span>
+      <span class="notes">{{ link.notes | markdownify | remove: '<p>' | remove: '</p>'}}</span>
       {% endif %}
       {% if link.journal %} 
       <span class="journal">{{ link.journal | markdownify | remove: '<p>' | remove: '</p>'}}</span>
