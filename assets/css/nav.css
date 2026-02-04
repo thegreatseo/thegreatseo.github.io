@@ -1,105 +1,87 @@
+/* Main Navbar Background */
 .topnav {
-  background-color: white;
-  opacity: 0.85;
+  background-color: #20212b; /* Forced to dark background */
+  opacity: 0.95;             /* Slightly higher opacity for better text contrast */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 999;
-  height: 60px; /* Consistent height */
+  height: 60px;
+  border-bottom: 1px solid rgba(45, 106, 79, 0.2); /* Subtle emerald border */
 }
 
-@media (prefers-color-scheme: dark) {
-  .topnav {
-    background-color: #20212b;
-  }
-}
-
+/* Centered Content Container */
 .nav-container {
-  max-width: 1100px; /* Match your .wrapper width! */
-  margin: 0 auto;    /* Centers the navbar content */
+  max-width: 1100px; /* Matches your updated .wrapper width */
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* Pushes logo left, links right */
+  justify-content: space-between;
   align-items: center;
   height: 100%;
   padding: 0 20px;
 }
 
 .nav-logo img {
-  height: 40px; /* Scale logo to fit height */
+  height: 40px;
   width: auto;
   display: block;
 }
 
+/* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 20px; /* Space between links */
+  gap: 20px;
 }
 
 .nav-links a {
-  color: #f2f2f2;
+  color: #f2f2f2; /* Light gray text for dark background */
   text-decoration: none;
   font-size: 17px;
   font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #B7E4C7; /* Use your new Mint/Green color here! */
-}
-
-/* Hide hamburger on desktop */
-.topnav .icon {
-  display: none;
-  color: white;
-  font-size: 24px;
-}
-
-@media (prefers-color-scheme: dark) {
-  .topnav .icon {
-    color: black;
-  }
-}
-
-/* --- Mobile View --- */
-@media screen and (max-width: 960px) {
-  .nav-links {
-    display: none; /* Hide links by default on mobile */
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    /* max-width: 50%; */
-    background-color: #20212b;
-    padding: 20px;
-  }
-
-  .nav-links.responsive {
-    display: flex; /* Show when toggled */
-  }
-
-  .topnav .icon {
-    display: block; /* Show hamburger */
-  }
-}
-
-
-/* Normal state */
-.nav-links a {
-  color: #f2f2f2;
   padding: 5px 10px;
   transition: all 0.3s ease;
 }
 
-/* Active state - The Green Highlight */
+/* Active State - Highlighted in Muted Moss/Mint */
 .nav-links a.active {
-  color: #B7E4C7 !important; /* Your new Mint Green */
+  color: #B7E4C7 !important; 
   font-weight: 600;
-  border-bottom: 2px solid #2D6A4F; /* Emerald underline */
+  border-bottom: 2px solid #2D6A4F; 
 }
 
 /* Hover effect for non-active links */
 .nav-links a:hover:not(.active) {
   color: #95D5B2;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle dark hover highlight */
   border-radius: 4px;
+}
+
+/* Hamburger icon for mobile - Forced to white */
+.topnav .icon {
+  display: none;
+  color: white !important; 
+  font-size: 24px;
+}
+
+/* --- Mobile View --- */
+@media screen and (max-width: 960px) {
+  .nav-links {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    /* width: 100%; */
+    background-color: #20212b; /* Ensure mobile menu is also dark */
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-links.responsive {
+    display: flex; 
+  }
+
+  .topnav .icon {
+    display: block; 
+  }
 }
