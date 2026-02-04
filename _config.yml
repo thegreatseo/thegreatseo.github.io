@@ -3,12 +3,14 @@ title: Jaehyeon Seo
 position: PhD Student
 affiliation: Yonsei University
 email: jaehyeonseo@yonsei.ac.kr
+url: https://jaehyeonseo.com/
+baseurl: ""
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: combinatorics graph theory
+keywords: combinatorics graph theory mathematics
 description: Jaehyeon Seo is a mathematics PhD student in Yonsei University, working in extremal combinatorics and graph theory.
-# canonical: https://minimal-light-theme.yliu.me/
+canonical: https://jaehyeonseo.com/
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
