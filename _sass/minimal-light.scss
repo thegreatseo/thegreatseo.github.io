@@ -1,3 +1,11 @@
+/* --- Brand Variables --- */
+$brand-primary:      #2D6A4F; // Emerald (Light Mode)
+$brand-link:         #1B4332; // Forest (Light Mode)
+
+/* --- The Darker Dark Mode --- */
+$brand-primary-dark: #7FB685; // Muted Moss (Legible but deep)
+$brand-link-dark: #95D5B2; // Lighter Mint for Headers
+
 html {
   /* Default is usually 16px. 18px or 110% makes a big difference. */
   font-size: 112%; 
@@ -12,14 +20,14 @@ html {
   height:2.4rem;
   width:2.4rem;
   background-color:transparent;
-  color:#043361!important;
+  color:$brand-link !important;
   border-radius:100%;
   text-align:center;
   font-size:1.15rem;
   line-height:2.5rem;
   margin-right:1rem}
 
-@media (prefers-color-scheme: dark) { .social-icons a {color: #3eb7f0 !important; }}
+@media (prefers-color-scheme: dark) { .social-icons a {color: $brand-link-dark !important; }}
 
 .social-icons a:last-child{margin-right:0}.social-icons a:hover{background-color:white;
     color:black;
@@ -235,18 +243,18 @@ papertitle {
 
 h3, h4, h5, h6 {
   font-weight: 600;
-  color:#043361;
+  color:$brand-primary;
   margin:0 0 20px;
 }
 
 h1 {
   font-weight: 500;
-  color:#043361;
+  color:$brand-primary;
   margin:0 0 20px;
 }
 
 h2 {
-  color:#043361;
+  color:$brand-primary;
   font-weight: 500;
   margin:2px 0px 15px;
   font-size: 157%;
@@ -254,11 +262,11 @@ h2 {
 
 @media (prefers-color-scheme: dark) {
   h1, h3, h4, h5, h6 {
-    color:rgb(62, 183, 240);
+    color:$brand-primary-dark;
   }
 
   h2 {
-    color:rgb(62, 183, 240);
+    color:$brand-primary-dark;
   }
 }
 
@@ -275,7 +283,7 @@ h1 {
 }
 
 a {
-  color:#39c;
+  color:$brand-link;
   text-decoration:none;
 }
 
@@ -285,7 +293,7 @@ a:hover {
 
 @media (prefers-color-scheme: dark) {
   a {
-    color:rgb(62, 183, 240);
+    color:$brand-link-dark;
   }
 }
 
