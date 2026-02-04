@@ -2,13 +2,13 @@ main:
 
   - title: Lower bounds for multivariate independence polynomials and their generalisations
     authors: Joonkyung Lee, Jaehyeon Seo
-    arxiv: 2602.02450
+    arxiv: "2602.02450"
 
   - title: "Semi-Autonomous Mathematics Discovery with Gemini: A Case Study on the Erdős Problems"
     authors: Tony Feng, Trieu Trinh, Garrett Bingham, Jiwon Kang, Shengtong Zhang, Sang-hyun Kim, Kevin Barreto, Carl Schildkraut, Junehyuk Jung, Jaehyeon Seo, Carlo Pagano, Yuri Chervonyi, Dawsen Hwang, Kaiying Hou, Sergei Gukov, Cheng-Chiang Tsai, Hyunwoo Choi, Youngbeom Jin, Wei-Yuan Li, Hao-An Wu, Ruey-An Shiu, Yu-Sheng Shih, Quoc V. Le, Thang Luong
     # conference_short: CVPR
     # conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    arxiv: 2601.22401
+    arxiv: "2601.22401"
     # code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
@@ -17,28 +17,28 @@ main:
   
   - title: Counting homomorphisms in antiferromagnetic graphs via Lorentzian polynomials
     authors: Joonkyung Lee, Jaeseong Oh, Jaehyeon Seo
-    arxiv: 2506.13659
-    notes: Submitted. [Extended abstract](https://www.mat.univie.ac.at/~slc/wpapers/FPSAC2025/14.pdf) accepted to FPSAC 2025
+    arxiv: "2506.13659"
+    notes: Submitted. [Extended abstract](https://www.mat.univie.ac.at/~slc/wpapers/FPSAC2025/14.pdf) accepted to [FPSAC 2025](https://www.math.sci.hokudai.ac.jp/sympo/fpsac2025/)
   
   - title: Transversal cycles and paths in tournaments
     authors: Debsoumya Chakraborti, Jaehoon Kim, Hyunwoo Lee, Jaehyeon Seo
-    arxiv: 2407.14300
+    arxiv: "2407.14300"
     notes: Submitted
   
   - title: Hamilton transversals in tournaments
     authors: Debsoumya Chakraborti, Jaehoon Kim, Hyunwoo Lee, Jaehyeon Seo
-    arxiv: 2307.00912
+    arxiv: "2307.00912"
     doi: 10.1007/s00493-024-00123-1
     journal: "*Combinatorica* **44**, 1381–1400 (2024)"
   
   - title: On a rainbow extremal problem for color-critical graphs
     authors: Debsoumya Chakraborti, Jaehoon Kim, Hyunwoo Lee, Hong Liu, Jaehyeon Seo
-    arxiv: 2204.02575
+    arxiv: "2204.02575"
     doi: 10.1002/rsa.21189
     journal: "*Random Structures & Algorithms* 64 (2024), 460–489"
   
   - title: On 1-Subdivisions of Transitive Tournaments
     authors: Jaehoon Kim, Hyunwoo Lee, Jaehyeon Seo
-    arxiv: 2110.05002
+    arxiv: "2110.05002"
     doi: 10.37236/10788
     journal: "*Electronic Journal of Combinatorics* (2022), P1.51"
