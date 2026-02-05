@@ -150,12 +150,38 @@ darkonly { visibility: visible; }
     padding-right:320px;
   }
 
+  // section {
+  //   border:1px solid #e5e5e5;
+  //   border-width:1px 0;
+  //   padding:20px 0;
+  //   margin:0 0 20px;
+  // }
+
   section {
-    border:1px solid #e5e5e5;
-    border-width:1px 0;
-    padding:20px 0;
-    margin:0 0 20px;
+    position: relative; /* Necessary to anchor the pseudo-element */
+    padding: 20px 0;
+    margin: 0 40px 20px;
   }
+
+  /* Creating the top and bottom lines at 50% width */
+  section::before
+  // section::after
+  {
+    content: "";
+    position: absolute;
+    left: 20%;           /* Aligns the line to the left edge */
+    width: 60%;        /* Sets the length to half the page/container width */
+    height: 1px;       /* The thickness of the line */
+    background-color: white; /* Your Emerald brand color */
+  }
+
+  section::before {
+    top: 0;            /* Positions line at the top of the section */
+  }
+
+  // section::after {
+  //   bottom: 0;         /* Positions line at the bottom of the section */
+  // }
 
   header a small {
     display:inline;
@@ -198,9 +224,9 @@ darkonly { visibility: visible; }
     padding:0;
   }
 
-  header ul, header p.view {
+  // header ul, header p.view {
     
-  }
+  // }
 
   pre, code {
     word-wrap:normal;
@@ -216,6 +242,8 @@ darkonly { visibility: visible; }
   body {
     padding:15px;
   }
+
+  section {margin: 0 0px 20px;}
 
   header ul {
     width:99%;
@@ -272,4 +300,46 @@ darkonly { visibility: visible; }
 ul ul li {
     color: #adb5bd;
     font-size: 0.95em;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(32, 33, 43, 0.95); /* Matches $body-dark */
+  
+  /* Add these for vertical/horizontal centering */
+  display: none; /* JavaScript will change this to 'flex' */
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Modal Content (The Image) */
+.modal-content {
+  /* margin: auto; // Remove this */
+  display: block;
+  width: auto;      /* Allows natural width */
+  max-width: 90%;  /* Prevents touching edges */
+  max-height: 85%; /* Ensures it stays within vertical bounds */
+  border: 2px solid #2D6A4F; 
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }

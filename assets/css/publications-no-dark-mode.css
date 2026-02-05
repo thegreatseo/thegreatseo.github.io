@@ -56,9 +56,9 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
 
-.publications ol.bibliography li .links a.btn { color: #FFFFFF; border: 1px solid #FFFFFF; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; }
+.publications ol.bibliography li .links a.btn { color: #FFFFFF; border: 1px solid #FFFFFF; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; border-radius: 6px;}
 
-.publications ol.bibliography li .links a.btn:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
+.publications ol.bibliography li .links a.btn:hover { color: #2D6A4F; border-color: #2D6A4F; }
 
 .publications ol.bibliography li .links .notes { font-size: 0.875rem; margin-left: 0.25rem; color: #fafafa; font-style: italic; }
 
@@ -76,4 +76,47 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
 
-.publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 123px; width: 270px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: cover; }
+.publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 120px; width: 150px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: contain;
+    filter: brightness(0.9) contrast(1.1);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.publications ol.bibliography li .teaser:hover {
+  filter: brightness(1.0) contrast(1.0); /* Glows to full color on hover */
+  cursor: zoom-in; /* Changes the cursor on hover */
+  transform: scale(1.1);
+}
+
+
+/* Vertical alignment for the publication list */
+.pub-row {
+  display: flex;
+  align-items: center; /* This centers the image and text vertically */
+  width: 100%;
+}
+
+.publications ol.bibliography li {
+  min-height: 110px;
+  margin-bottom: 2.0rem; /* Increased for better legibility between papers */
+  list-style: none;
+}
+
+/* Ensure the image column doesn't shrink or grow unevenly */
+.abbr {
+  flex: 0 0 25%; /* Fixed width for the image side (matches col-sm-3) */
+  max-width: 25%;
+  display: flex;
+  justify-content: center; /* Horizontal centering within the column */
+  align-items: center;
+}
+
+/* Styles for the teaser itself */
+.teaser {
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+  object-fit: contain; /* Changed from cover to show the full math diagram */
+  max-width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}

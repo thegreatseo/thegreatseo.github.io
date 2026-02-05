@@ -13,17 +13,21 @@ main:
     # page: https://class-il.mpi-inf.mpg.de/mnemonics/
     # bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     # notes: Oral Presentation
-    # image: ./assets/img/teaser_example.png
+    image: ./assets/img/fig_semi-autonomous.png
+    # image-setting: "object-position: left center"
   
   - title: Counting homomorphisms in antiferromagnetic graphs via Lorentzian polynomials
     authors: Joonkyung Lee, Jaeseong Oh, Jaehyeon Seo
     arxiv: "2506.13659"
     notes: Submitted. [Extended abstract](https://www.mat.univie.ac.at/~slc/wpapers/FPSAC2025/14.pdf) accepted to [FPSAC 2025](https://www.math.sci.hokudai.ac.jp/sympo/fpsac2025/)
+    image: ./assets/img/fig_counting_homomorphisms.png
+    # image-setting: "object-position: left center"
   
   - title: Transversal cycles and paths in tournaments
     authors: Debsoumya Chakraborti, Jaehoon Kim, Hyunwoo Lee, Jaehyeon Seo
     arxiv: "2407.14300"
     notes: Submitted
+    image: ./assets/img/fig_transversal_cycles.png
   
   - title: Hamilton transversals in tournaments
     authors: Debsoumya Chakraborti, Jaehoon Kim, Hyunwoo Lee, Jaehyeon Seo

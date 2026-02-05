@@ -155,5 +155,37 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <div id="imageModal" class="modal" onclick="this.style.display='none'">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+    <script>
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("img01");
+    var images = document.getElementsByClassName('teaser');
+
+    // Function to open modal
+    for (var i = 0; i < images.length; i++) {
+        images[i].onclick = function() {
+            modal.style.display = "flex"; // Changed from 'block' to 'flex'
+            modalImg.src = this.src;
+        }
+    }
+
+    // Close when clicking the background
+    modal.onclick = function(event) {
+        if (event.target === modal || event.target.className === 'close') {
+            modal.style.display = "none";
+        }
+    }
+
+    // Close with ESC key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            modal.style.display = "none";
+        }
+    });
+    </script>
   </body>
 </html>
