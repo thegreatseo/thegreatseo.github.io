@@ -96,7 +96,7 @@ strong {
 }
 
 header {
-  width: min(280px, 25%);
+  width: min(260px, 25%);
   float: left;
   position: fixed;
   padding-top: 4.0em;
@@ -104,7 +104,7 @@ header {
 }
 
 section {
-  width: min(720px, 90% - min(280px, 25%));
+  width: min(720px, 90% - min(260px, 25%));
   float: right;
   padding-top: 4.0em;
   padding-bottom: 50px;
@@ -234,10 +234,34 @@ darkonly { visibility: visible; }
 }
 
 @media print, screen and (max-width: 480px) {
-
+  /* Force the row to stack vertically */
   .pub-row {
-    display: block; 
-    align-items: center;}
+    display: flex; 
+    flex-direction: column; /* Stacks image on top, text on bottom */
+    align-items: center;    /* Centers the image horizontally */
+    // text-align: center;     /* Optional: centers the text content as well */
+  }
+
+  /* Reset column widths for mobile stacking */
+  .pub-row .col-sm-3, 
+  .pub-row .col-sm-9 {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 15px; /* Adds space between image and title */
+  }
+
+  /* Adjust the image container (abbr) for mobile */
+  .pub-row .abbr {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .teaser {
+    width: 80%; /* Makes image slightly smaller and centered on mobile */
+    height: auto;
+  }
 
   body {
     padding:15px;
