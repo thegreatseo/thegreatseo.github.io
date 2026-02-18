@@ -43,7 +43,6 @@
 .talk-date {
     flex: 0 0 100px;
     text-align: right;
-    font-family: monospace;
 }
 
 .day-month {
