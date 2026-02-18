@@ -1,0 +1,132 @@
+/* Container and Section Title */
+.talks-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    border-bottom: 2px solid #2D6A4F;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+/* Year Headings */
+.year-heading {
+    font-size: 1.8rem;
+    color: #7FB685; /* Muted Moss */
+    margin: 40px 0 20px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.year-heading::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-45%);
+    width: 5px;
+    height: 1.6rem;
+    background: #2D6A4F;
+    border-radius: 2px;
+}
+
+/* Individual Talk Items */
+.talk-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(127, 182, 133, 0.2);
+}
+
+.talk-date {
+    flex: 0 0 100px;
+    text-align: right;
+    font-family: monospace;
+}
+
+.day-month {
+    font-size: 0.9rem;
+    color: #95D5B2;
+    /* text-transform: uppercase; */
+    font-weight: 500;
+}
+
+.talk-content {
+    flex: 1;
+}
+
+.talk-title {
+    font-size: 1.0rem;
+    margin: 0 0 8px 0;
+    color: #eeeff0;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.talk-metadata {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center; /* This forces the icon and text to align their centers */
+}
+
+.talk-event {
+    color: #95D5B2;
+}
+
+.talk-location {
+    display: inline-flex;
+    align-items: center; /* Ensures the pin and 'Pasadena, CA' are perfectly level */
+    color: #adb5bd;
+}
+
+.talk-location i {
+    font-size: 0.8rem;
+    margin-right: 4px;
+}
+
+/* Badges & Links */
+.talk-badge {
+    display: inline-block;
+    background: #1b2e23;
+    color: #7FB685;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    border: 1px solid #2D6A4F;
+}
+
+.talk-links {
+    display: flex;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.talk-links a {
+    color: #95D5B2;
+    transition: color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.talk-links a:hover {
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* Responsive Stacking */
+@media (max-width: 600px) {
+    .talk-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .talk-date {
+        text-align: left;
+    }
+}

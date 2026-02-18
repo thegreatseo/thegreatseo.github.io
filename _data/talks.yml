@@ -1,0 +1,180 @@
+main:
+
+# 2026
+
+- title: Extremal questions on independent sets, colorings, and graph homomorphisms
+  event: Math Graduate Student Seminar
+  venue: Caltech
+  city: Pasadena, CA
+  country: USA
+  date: February 24
+  year: 2026
+  notice:
+  slide:
+  video:
+
+# 2025
+
+- title: Counting homomorphisms in antiferromagnetic graphs via Lorentzian polynomials
+  event: RS&A 2025
+  venue: TU Wien
+  city: Vienna
+  country: Austria
+  date: August 5
+  year: 2025
+  notice: https://www.dmg.tuwien.ac.at/rsa2025/#program
+  slide:
+  video:
+
+- title: Counting homomorphisms in antiferromagnetic graphs via Lorentzian polynomials
+  event: FPSAC 2025
+  venue: Hokkaido University
+  city: Sapporo
+  country: Japan
+  date: July 21
+  year: 2025
+  notice: https://www.math.sci.hokudai.ac.jp/sympo/fpsac2025/extended_abstracts/#:~:text=Joonkyung%20Lee%2C%20Jaeseong%20Oh%20and%20Jaehyeon%20Seo%3A%20Counting%20homomorphisms%20in%20antiferromagnetic%20graphs%20via%20Lorentzian%20polynomials.
+  slide:
+  poster:
+  video:
+  type: Poster
+
+- title: Graph homomorphism inequalities and Lorentzian polynomials
+  event: Combinatorics Student Seminar
+  venue: SCMS
+  city: Shanghai
+  country: China
+  date: June 11
+  year: 2025
+  notice:
+  slide:
+  video:
+  note:
+
+- title: Graph homomorphism inequalities and Lorentzian polynomials
+  event: CanaDAM 2025
+  venue: University of Ottawa
+  city: Ottawa
+  country: Canada
+  date: May 21
+  year: 2025
+  notice: https://canadam.ca/2025schedule#page-15
+  slide:
+  video:
+  note:
+
+- title: Graph homomorphism inequalities and Lorentzian polynomials
+  event: 4th East Asia Workshop on Extremal and Structural Graph Theory
+  venue: Sun-Yat Sen University
+  city: Guangzhou
+  country: China
+  date: March 30
+  year: 2025
+  notice: https://tgt.ynu.ac.jp/2025EastAsia.html
+  slide:
+  video:
+  note:
+
+# 2024
+
+- title: Graph homomorphisms and Lorentzian polynomials
+  event: Sinchon Seminar of Graduates 5
+  venue: Ewha Womans University
+  city: Seoul
+  country: Korea
+  date: December 27
+  year: 2024
+  notice:
+  slide:
+  video:
+  note:
+
+- title: Graph homomorphisms and Lorentzian polynomials
+  event: KIAS Graduate Student Meeting in Pure Mathematics
+  venue: KIAS
+  city: Seoul
+  country: Korea
+  date: October 21
+  year: 2024
+  notice:
+  slide:
+  video:
+  note:
+
+- title: Hamilton transversals in tournaments
+  event: 2024 Combinatorics Workshop
+  venue: Chungbuk National University
+  city: Cheongju
+  country: Korea
+  date: August 29
+  year: 2024
+  notice:
+  slide:
+  video:
+  note:
+
+- title: Extremal graph theory and rainbow substructures
+  event: 2024 Korea Student Combinatorics Workshop
+  venue: Gongju Traditional Korean Village
+  city: Gongju
+  country: Korea
+  date: July 30
+  year: 2024
+  notice:
+  slide:
+  video:
+  note:
+
+# 2023
+
+- title: Rainbow oriented Hamiltonian paths and cycles in tournaments
+  event: 2023 KMS Spring Meeting
+  venue: Daejeon Convention Center
+  city: Daejeon
+  country: Korea
+  date: April 29
+  year: 2023
+  notice:
+  slide:
+  video:
+  note:
+
+# 2022
+
+- title: How can we find a rainbow subgraph?
+  event: KAIST Math Graduate Student Seminar
+  venue: KAIST (online)
+  city: Daejeon
+  country: Korea
+  date: March 24
+  year: 2022
+  notice:
+  slide:
+  video:
+  note:
+
+- title: A rainbow Turán problem for color-critical graphs
+  event: Discrete Math Seminar
+  venue: IBS DIMAG
+  city: Daejeon
+  country: Korea
+  date: January 18
+  year: 2022
+  notice:
+  slide:
+  video:
+  note:
+
+# 2021
+
+- title: On multicolor extremal problems
+  event: 2021 Combinatorics Workshop
+  venue: The Bloomvista
+  city: Yangpyeong
+  country: Korea
+  date: December 21
+  year: 2021
+  notice:
+  slide:
+  video:
+  note:
