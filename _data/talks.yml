@@ -2,11 +2,22 @@ main:
 
 # 2026
 
+- title: Lower bounds for multivariate independence polynomials and their generalisations
+  event: 2026 SIAM Conference on Discrete Mathematics
+  venue: University of California, San Diego
+  city: San Diego, CA
+  country: US
+  date: June 23
+  year: 2026
+  notice: https://meetings.siam.org/sess/dsp_talk.cfm?p=156824
+  slide:
+  video:
+
 - title: Extremal questions on independent sets, colorings, and graph homomorphisms
   event: Math Graduate Student Seminar
   venue: Caltech
   city: Pasadena, CA
-  country: USA
+  country: US
   date: February 24
   year: 2026
   notice:
