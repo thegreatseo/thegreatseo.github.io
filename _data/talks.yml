@@ -4,7 +4,7 @@ main:
 
 - title: Lower bounds for multivariate independence polynomials and their generalisations
   event: 2026 SIAM Conference on Discrete Mathematics
-  venue: University of California, San Diego
+  venue: UC San Diego
   city: San Diego, CA
   country: US
   date: June 23
@@ -20,7 +20,7 @@ main:
   country: US
   date: February 24
   year: 2026
-  notice:
+  notice: https://www.pma.caltech.edu/calendar/100647
   slide:
   video:
 
