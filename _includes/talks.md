@@ -32,7 +32,7 @@
                   <a href="{{ talk.notice }}" target="_blank"><i class="fa-solid fa-circle-info"></i> Notice</a>
                 {% endif %}
                 {% if talk.slide %}
-                  <a href="{{ talk.slide | relative_url }}" target="_blank"><i class="fa-solid fa-file-powerpoint"></i> Slides</a>
+                  <a href="{{ "/assets/files/slides/" | append: talk.slide | relative_url }}" target="_blank"><i class="fa-solid fa-file-powerpoint"></i> Slides</a>
                 {% endif %}
                 {% if talk.poster %}
                   <a href="{{ talk.poster | relative_url }}" target="_blank"><i class="fa-solid fa-image"></i> Poster</a>
