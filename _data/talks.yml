@@ -21,7 +21,7 @@ main:
   date: March 28
   year: 2026
   notice: https://sites.google.com/view/gscc2026/schedule
-  slide:
+  slide: "28Mar2026 GSCC 2026 - Lower bounds for multivariate independence polynomials and their generalizations.pdf"
   video:
 
 - title: Extremal questions on independent sets, colorings, and graph homomorphisms
