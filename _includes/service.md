@@ -4,5 +4,6 @@
 - Co-organizer of [Discrete Analysis Seminar at Yonsei University](https://sites.google.com/yonsei.ac.kr/discrete-analysis-seminar/)
 
 ## Peer Review Activities
+- **2026**: SIAM Journal on Discrete Mathematics
 - **2025**: Combinatorics, Probability and Computing. SIAM Journal on Discrete Mathematics
 - **2024**: Journal of Graph Theory
