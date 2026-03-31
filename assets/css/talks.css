@@ -13,7 +13,8 @@
 /* Year Headings */
 .year-heading {
     font-size: 1.8rem;
-    color: #7FB685; /* Muted Moss */
+    color: #7FB685;
+    /* Muted Moss */
     margin: 40px 0 20px;
     position: relative;
     padding-left: 15px;
@@ -69,8 +70,10 @@
     margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    align-items: center; /* This forces the icon and text to align their centers */
+    gap: 0 20px;
+    /* 0px vertical, 20px horizontal */
+    align-items: center;
+    /* This forces the icon and text to align their centers */
 }
 
 .talk-event {
@@ -79,13 +82,16 @@
 
 .talk-location {
     display: inline-flex;
-    align-items: center; /* Ensures the pin and 'Pasadena, CA' are perfectly level */
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     color: #adb5bd;
 }
 
 .talk-location i {
     font-size: 0.8rem;
     margin-right: 4px;
+    flex: 0 0 auto;
 }
 
 /* Badges & Links */
@@ -125,7 +131,9 @@
         flex-direction: column;
         gap: 10px;
     }
+
     .talk-date {
+        flex: none;
         text-align: left;
     }
 }
