@@ -104,6 +104,12 @@ papertitle {
   opacity: 0.85;
 }
 
+/* Keep the header affiliation link unadorned */
+header > a:not(.image) {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* --- Math & Tables --- */
 th,
 dt {
