@@ -2,6 +2,28 @@ main:
 
 # 2026
 
+- title: Multivariate occupancy fraction bounds
+  event: ASIACOMB 2026
+  venue: Daejeon Convention Center
+  city: Dajeon
+  country: Korea
+  date: August 24
+  year: 2026
+  notice: 
+  slide:
+  video:
+
+- title: TBD
+  event: Workshop for Young Mathematicians in Korea 2026
+  venue: KAIST
+  city: Dajeon
+  country: Korea
+  date: August 19
+  year: 2026
+  notice: 
+  slide:
+  video:
+
 - title: Lower bounds for multivariate independence polynomials and their generalisations
   event: 2026 SIAM Conference on Discrete Mathematics
   venue: UCSD
