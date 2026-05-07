@@ -1,5 +1,10 @@
 main:
 
+  - title: Degree-sequence bounds for independent sets via multivariate local occupancy
+    authors: Ewan Davies, Juspreet Singh Sandhu, Jaehyeon Seo, Brian Tan
+    arxiv: "2605.05149"
+    notes:
+
   - title: Lower bounds for multivariate independence polynomials and their generalisations
     authors: Joonkyung Lee, Jaehyeon Seo
     arxiv: "2602.02450"
