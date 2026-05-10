@@ -97,7 +97,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography li {
   min-height: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.75rem;
   list-style: none;
 }
 
