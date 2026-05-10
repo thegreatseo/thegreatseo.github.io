@@ -1,3 +1,5 @@
+@use "sass:color";
+
 /* --- Brand Variables (Forced to Dark Mode Palette) --- */
 $brand-primary-dark: #7FB685; // Muted Moss
 $brand-link-dark: #95D5B2; // Lighter Mint
@@ -96,7 +98,7 @@ papertitle {
 }
 
 .wrapper section a:hover {
-  color: lighten($brand-link-dark, 12%);
+  color: color.adjust($brand-link-dark, $lightness: 12%);
 }
 
 .wrapper section a:hover::after {
