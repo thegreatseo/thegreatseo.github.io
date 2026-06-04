@@ -35,6 +35,19 @@ main:
   slide:
   video:
 
+- title: Clique-minimizing models
+  event: Flags in the Mountains
+  venue: CSU Mountain Campus
+  city: Bellvue, CO
+  country: US
+  date: June 4
+  year: 2026
+  notice: https://sites.google.com/view/flags-in-the-mountains/lightning-talks
+  slide:
+  poster:
+  video:
+  type: Lightning talk
+
 - title: Lower bounds for multivariate independence polynomials and their generalizations
   event: Graduate Student Combinatorics Conference 2026
   venue: UIC
