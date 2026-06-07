@@ -48,7 +48,6 @@ main:
   year: 2026
   event-link: https://combcon.github.io/
   notice:
-  slide:
   poster:
   video:
   type: Poster
@@ -63,7 +62,6 @@ main:
   event-link: https://www.siam.org/conferences-events/siam-conferences/dm26/
   notice: https://meetings.siam.org/sess/dsp_talk.cfm?p=156824
   slide:
-  video:
 
 - title: Clique-minimizing models
   event: Flags in the Mountains
@@ -75,8 +73,6 @@ main:
   event-link: https://sites.google.com/view/flags-in-the-mountains/
   notice: https://sites.google.com/view/flags-in-the-mountains/lightning-talks
   slide: "2026-06-04-Flags-in-the-Mountains-Slides-Jaehyeon-Seo.pdf"
-  poster:
-  video:
   type: Lightning talk
 
 - title: Lower bounds for multivariate independence polynomials and their generalizations
@@ -89,7 +85,6 @@ main:
   event-link: https://sites.google.com/view/gscc2026/
   notice: https://sites.google.com/view/gscc2026/schedule
   slide: "2026-03-28-GSCC-2026-Slides-Jaehyeon-Seo.pdf"
-  video:
 
 - title: Extremal questions on independent sets, colorings, and graph homomorphisms
   event: Math Graduate Student Seminar
@@ -100,7 +95,6 @@ main:
   year: 2026
   notice: https://www.pma.caltech.edu/calendar/100647
   slide: "2026-02-24-Caltech-Math-Graduate-Student-Seminar-Slides-Jaehyeon-Seo.pdf"
-  video:
 
 # 2025
 
