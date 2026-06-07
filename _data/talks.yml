@@ -1,5 +1,19 @@
 main:
 
+# - title: 
+#   event: 
+#   venue: 
+#   city: 
+#   country: 
+#   date: 
+#   year: 
+#   event-link: 
+#   notice: 
+#   slide: 
+#   poster:
+#   video:
+#   type: 
+
 # 2026
 
 - title: Multivariate occupancy fraction bounds
@@ -60,7 +74,7 @@ main:
   year: 2026
   event-link: https://sites.google.com/view/flags-in-the-mountains/
   notice: https://sites.google.com/view/flags-in-the-mountains/lightning-talks
-  slide:
+  slide: "2026-06-04-Flags-in-the-Mountains-Slides-Jaehyeon-Seo.pdf"
   poster:
   video:
   type: Lightning talk
