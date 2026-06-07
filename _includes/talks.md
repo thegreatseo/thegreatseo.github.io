@@ -21,7 +21,15 @@
                 {% endif %}
               </h3>
               <div class="talk-metadata">
-                <span class="talk-event"><strong>{{ talk.event }}</strong></span>
+                <span class="talk-event">
+                  <strong>
+                    {% if talk.event-link %}
+                      <a href="{{ talk.event-link }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a>
+                    {% else %}
+                      {{ talk.event }}
+                    {% endif %}
+                  </strong>
+                </span>
                 <span class="talk-location">
                   <i class="fa-solid fa-location-dot"></i> {{ talk.venue }}, {{ talk.city }}{% if talk.country %}, {{ talk.country }}{% endif %}
                 </span>

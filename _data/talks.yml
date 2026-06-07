@@ -9,6 +9,7 @@ main:
   country: Korea
   date: August 24
   year: 2026
+  event-link: https://asiacomb.com/
   notice: 
   slide:
   video:
@@ -24,6 +25,20 @@ main:
   slide:
   video:
 
+- title: Clique-minimizing models
+  event: Combinatorics at the Confluence
+  venue: Carnegie Mellon University
+  city: Pittsburgh, PA
+  country: US
+  date: Juky 20
+  year: 2026
+  event-link: https://combcon.github.io/
+  notice:
+  slide:
+  poster:
+  video:
+  type: Poster
+
 - title: Lower bounds for multivariate independence polynomials and their generalisations
   event: 2026 SIAM Conference on Discrete Mathematics
   venue: UCSD
@@ -31,6 +46,7 @@ main:
   country: US
   date: June 23
   year: 2026
+  event-link: https://www.siam.org/conferences-events/siam-conferences/dm26/
   notice: https://meetings.siam.org/sess/dsp_talk.cfm?p=156824
   slide:
   video:
@@ -42,6 +58,7 @@ main:
   country: US
   date: June 4
   year: 2026
+  event-link: https://sites.google.com/view/flags-in-the-mountains/
   notice: https://sites.google.com/view/flags-in-the-mountains/lightning-talks
   slide:
   poster:
@@ -55,6 +72,7 @@ main:
   country: US
   date: March 28
   year: 2026
+  event-link: https://sites.google.com/view/gscc2026/
   notice: https://sites.google.com/view/gscc2026/schedule
   slide: "2026-03-28-GSCC-2026-Slides-Jaehyeon-Seo.pdf"
   video:
@@ -79,6 +97,7 @@ main:
   country: Austria
   date: August 5
   year: 2025
+  event-link: https://www.dmg.tuwien.ac.at/rsa2025/
   notice: https://www.dmg.tuwien.ac.at/rsa2025/#program
   slide:
   video:
@@ -90,6 +109,7 @@ main:
   country: Japan
   date: July 21
   year: 2025
+  event-link: https://www.math.sci.hokudai.ac.jp/sympo/fpsac2025/
   notice: https://www.math.sci.hokudai.ac.jp/sympo/fpsac2025/extended_abstracts/#:~:text=Joonkyung%20Lee%2C%20Jaeseong%20Oh%20and%20Jaehyeon%20Seo%3A%20Counting%20homomorphisms%20in%20antiferromagnetic%20graphs%20via%20Lorentzian%20polynomials.
   slide:
   poster:
@@ -115,6 +135,7 @@ main:
   country: Canada
   date: May 21
   year: 2025
+  event-link: https://canadam.ca/2025
   notice: https://canadam.ca/2025schedule#page-15
   slide:
   video:
@@ -127,7 +148,8 @@ main:
   country: China
   date: March 30
   year: 2025
-  notice: https://tgt.ynu.ac.jp/2025EastAsia.html
+  event-link: https://tgt.ynu.ac.jp/2025EastAsia.html
+  # notice: https://tgt.ynu.ac.jp/2025EastAsia.html
   slide:
   video:
   note:

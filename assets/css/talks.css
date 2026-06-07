@@ -80,6 +80,16 @@
     color: #95D5B2;
 }
 
+.talk-event a {
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.talk-event a:hover,
+.talk-event a:focus {
+    color: white;
+}
+
 .talk-location {
     display: inline-flex;
     align-items: center;
