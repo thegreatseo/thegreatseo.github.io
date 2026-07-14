@@ -17,7 +17,7 @@
     {% endif %}
     {% endif %}
   </div-->
-  <div class="col-sm-9" style="padding-left: 20px;">
+  <div class="col-sm-9" style="padding-left: 0px;">
     <div class="title">{{ link.title }}</div>
     <div class="author">{% for author in authors %}{% assign coauthor = site.data.coauthors.main | where: "name", author | first %}{% if coauthor and coauthor.homepage %}<a href="{{ coauthor.homepage }}" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
     <div class="periodical"><em>{{ link.conference }}</em></div>
