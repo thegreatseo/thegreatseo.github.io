@@ -8,7 +8,7 @@ main:
   - title: Lower bounds for multivariate independence polynomials and their generalisations
     authors: Joonkyung Lee, Jaehyeon Seo
     arxiv: "2602.02450"
-    notes: Submitted
+    notes: "Submitted. One of the main theorems is formalized in Lean 4: see [this GitHub repo](https://github.com/thegreatseo/multivar-indep-formalize)."
 
   - title: "Semi-Autonomous Mathematics Discovery with Gemini: A Case Study on the Erdős Problems"
     authors: Tony Feng, Trieu Trinh, Garrett Bingham, Jiwon Kang, Shengtong Zhang, Sang-hyun Kim, Kevin Barreto, Carl Schildkraut, Junehyuk Jung, Jaehyeon Seo, Carlo Pagano, Yuri Chervonyi, Dawsen Hwang, Kaiying Hou, Sergei Gukov, Cheng-Chiang Tsai, Hyunwoo Choi, Youngbeom Jin, Wei-Yuan Li, Hao-An Wu, Ruey-An Shiu, Yu-Sheng Shih, Quoc V. Le, Thang Luong
