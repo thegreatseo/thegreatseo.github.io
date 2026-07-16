@@ -16,7 +16,7 @@ main:
 
 # 2026
 
-- title: Multivariate occupancy fraction bounds
+- title: Degree-sequence bounds for independent sets via multivariate local occupancy
   event: ASIACOMB 2026
   venue: Daejeon Convention Center
   city: Daejeon
@@ -24,18 +24,18 @@ main:
   date: August 24
   year: 2026
   event-link: https://asiacomb.com/
-  notice: 
+  notice: https://asiacomb.com/program/#:~:text=for%20Spherical%20Designs-,Jaehyeon%20Seo,-Degree%2Dsequence%20bounds
   slide:
   video:
 
-- title: TBD
+- title: What counts do cliques minimize? Independent Sets, colorings, and more
   event: Workshop for Young Mathematicians in Korea 2026
   venue: KAIST
   city: Daejeon
   country: Korea
   date: August 19
   year: 2026
-  notice: 
+  notice: https://sites.google.com/view/wymk2026/%EC%B4%88%EB%A1%9D#:~:text=Talk%205%20%3A-,%EC%84%9C%EC%9E%AC%ED%98%84%20(%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90),-What%20counts%20do
   slide:
   video:
 
