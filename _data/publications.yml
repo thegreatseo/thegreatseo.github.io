@@ -1,5 +1,10 @@
 main:
 
+  - title: Antiferromagnetic models are clique-minimizing
+    authors: Joonkyung Lee, Jaehyeon Seo
+    arxiv: "2608.17920"
+    notes:
+
   - title: Degree-sequence bounds for independent sets via multivariate local occupancy
     authors: Ewan Davies, Juspreet Singh Sandhu, Jaehyeon Seo, Brian Tan
     arxiv: "2605.05149"
