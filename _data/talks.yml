@@ -25,7 +25,7 @@ main:
   year: 2026
   event-link: https://asiacomb.com/
   notice: https://asiacomb.com/program/#:~:text=for%20Spherical%20Designs-,Jaehyeon%20Seo,-Degree%2Dsequence%20bounds
-  slide:
+  slide: "2026-08-24-ASIACOMB-2026-Slides-Jaehyeon-Seo.pdf"
   video:
 
 - title: What counts do cliques minimize? Independent Sets, colorings, and more
@@ -37,7 +37,7 @@ main:
   year: 2026
   event-link: https://sites.google.com/view/wymk2026/
   notice: https://sites.google.com/view/wymk2026/초록
-  slide:
+  slide: "2026-08-20-WYMK-2026-Slides-Jaehyeon-Seo.pdf"
   video:
 
 - title: Clique-minimizing models
