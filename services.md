@@ -2,6 +2,7 @@
 layout: homepage
 title: Service
 permalink: /service/
+body_class: compact-lists
 ---
 
 # Service

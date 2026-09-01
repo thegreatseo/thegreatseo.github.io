@@ -1,199 +1,118 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
 
 <head>
-  <!-- Google tag (gtag.js) -->
   {% if site.google_analytics %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZW0YP0YTD"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag() { window.dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', '{{ site.google_analytics }}');
   </script>
   {% endif %}
-  <title>{{ site.title }} | {{site.affiliation}}</title>
 
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{{ site.description }}">
-  {% if site.keywords %}
-  <meta name="keywords" content="{{ site.keywords }}">
-  {% endif %}
-  {% if site.canonical %}
-  <link rel="canonical" href="{{ site.canonical }}" />
-  {% endif %}
+  <meta name="theme-color" content="#f7f8f4">
+  {% if site.keywords %}<meta name="keywords" content="{{ site.keywords }}">{% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-  <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" type="image/png" />
-  <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" type="image/png" />
-  <script src="{{ '/assets/js/favicon-switcher.js' | relative_url }}" type="application/javascript"></script>
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 
-  <!-- <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  {% if site.font == "Sans Serif" %}
-  <link rel="stylesheet" href="{{ '/assets/css/font_sans_serif.css' | relative_url }}">
-  {% else %}
-  <link rel="stylesheet" href="{{ '/assets/css/font.css' | relative_url }}">
-  {% endif %}
+  <link rel="icon" media="(prefers-color-scheme: dark)" href="{{ site.favicon_dark | relative_url }}" type="image/svg+xml">
+  <link rel="icon" media="(prefers-color-scheme: light)" href="{{ site.favicon | relative_url }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
 
   {% if site.auto_dark_mode %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
   {% else %}
   <link rel="stylesheet" href="{{ '/assets/css/style-no-dark-mode.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/publications-no-dark-mode.css' | relative_url }}">
   {% endif %}
-
+  <link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/nav.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/talks.css' | relative_url }}">
-
-  <script>
-    function toggleNav() {
-      var x = document.getElementById("myLinks");
-      if (x.className === "nav-links") {
-        x.className += " responsive";
-      } else {
-        x.className = "nav-links";
-      }
-    }
-  </script>
 </head>
 
-<body>
-  <nav class="topnav">
+<body class="{% if page.url == '/' %}home-page{% else %}inner-page{% endif %}{% if page.body_class %} {{ page.body_class }}{% endif %}">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <nav class="topnav" aria-label="Primary navigation">
     <div class="nav-container">
-      <!-- <a href="{{ site.affiliation_link }}" class="nav-logo">
-          <img src="{{ site.affiliation_logo }}" alt="Affiliation Logo">
-        </a> -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="myLinks" aria-label="Open navigation" onclick="toggleNav(this)">
+        <span></span><span></span><span></span>
+      </button>
 
       <div id="myLinks" class="nav-links">
         {% include navigation.md %}
       </div>
-
-      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-        <i class="fa fa-bars"></i>
-      </a>
     </div>
   </nav>
-  <div class="wrapper">
-    <header>
 
+  <main class="wrapper" id="main-content">
+    <aside class="profile-card" aria-label="Profile">
       {% if site.avatar %}
-      <a class="image avatar"><img src="{{ site.avatar }}" alt="portrait" /></a>
-      {% endif %}
-
-      <h1>{{ site.title }}</h1>
-
-      {% if site.position %}
-      <position style="font-size:1.10rem;">{{ site.position }}</position>
-      <br>
-      {% endif %}
-      {% if site.affiliation %}
-      <a class="affiliation-link" href="{{ site.affiliation_link }}" rel="noopener">
-        <autocolor>{{ site.affiliation }}</autocolor><!--
-      --></a>
-      {%- if site.affiliation_country -%}, {{ site.affiliation_country }}{%- endif %}
-      <br>
-      {% endif %}
-      {% if site.email %}
-      <email>{{ site.email }}</email>
-      {% endif %}
-
-      <br>
-      <br>
-      <div class="social-icons">
-        {% if site.cv_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.cv_link | relative_url }}?v={{ site.cv_last_update }}" target="_blank">
-          <i class="ai ai-cv" style="font-size:1.3rem;"></i>
-        </a>
-        {% endif %}
-
-        {% if site.google_scholar %}
-        <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
-          <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
-        </a>
-        {% endif %}
-
-        {% if site.arxiv %}
-        <a style="margin: 0 5px 0 0" href="{{ site.arxiv }}">
-          <i class="ai ai-arxiv"></i>
-        </a>
-        {% endif %}
-
-        {% if site.github_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.github_link }}">
-          <i class="fab fa-github"></i>
-        </a>
-        {% endif %}
-
-        {% if site.linkedin %}
-        <a style="margin: 0 5px 0 0" href="{{ site.linkedin }}">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        {% endif %}
-
-        {% if site.twitter %}
-        <a style="margin: 0 0 0 0" href="{{ site.twitter }}">
-          <i class="fab fa-x-twitter"></i>
-        </a>
-        {% endif %}
+      <div class="portrait-frame">
+        <img class="portrait" src="{{ site.avatar | relative_url }}" alt="Portrait of {{ site.title }}" fetchpriority="high">
       </div>
-      <br>
+      {% endif %}
 
-    </header>
-    <section>
+      <div class="profile-copy">
+        <h1 class="profile-name">{{ site.title }}</h1>
+        {% if site.position %}<p class="profile-role">{{ site.position }}</p>{% endif %}
+
+        {% if site.affiliation %}
+        <p class="profile-affiliation">
+          <a href="{{ site.affiliation_link }}" rel="noopener">{{ site.affiliation }}</a>
+          {% if site.affiliation_country %}<span>{{ site.affiliation_country }}</span>{% endif %}
+        </p>
+        {% endif %}
+
+        {% if site.email %}<a class="profile-email" href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
+
+        <ul class="profile-links" aria-label="Academic and social profiles">
+          {% if site.cv_link %}
+          <li><a href="{{ site.cv_link | relative_url }}?v={{ site.cv_last_update }}" target="_blank" rel="noopener">CV</a></li>
+          {% endif %}
+          {% if site.google_scholar %}<li><a href="{{ site.google_scholar }}" target="_blank" rel="noopener">Scholar</a></li>{% endif %}
+          {% if site.arxiv %}<li><a href="{{ site.arxiv }}" target="_blank" rel="noopener">arXiv</a></li>{% endif %}
+          {% if site.github_link %}<li><a href="{{ site.github_link }}" target="_blank" rel="noopener">GitHub</a></li>{% endif %}
+          {% if site.linkedin %}<li><a href="{{ site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>{% endif %}
+          {% if site.twitter %}<li><a href="{{ site.twitter }}" target="_blank" rel="noopener">X</a></li>{% endif %}
+        </ul>
+      </div>
+    </aside>
+
+    <section class="page-content">
+      {% if page.url == '/' %}
+      <svg class="research-watermark" viewBox="0 0 180 140" aria-hidden="true">
+        <path d="M18 30 90 14l70 34-26 72-88 2L18 30Zm72-16 44 106M18 30l142 18M46 122 160 48" />
+        <circle cx="18" cy="30" r="5" />
+        <circle cx="90" cy="14" r="5" />
+        <circle cx="160" cy="48" r="5" />
+        <circle cx="134" cy="120" r="5" />
+        <circle cx="46" cy="122" r="5" />
+      </svg>
+      {% endif %}
 
       {{ content }}
 
-      <br>
-
       {% if site.enable_footnote %}
-      <p><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank"
-            rel="noopener">Minimal Light</a> theme.</small></p>
+      <p class="site-credit"><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a>.</small></p>
       {% endif %}
-
     </section>
-    <footer>
+  </main>
 
-    </footer>
-  </div>
-  <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
-  <div id="imageModal" class="modal" onclick="this.style.display='none'">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-  </div>
   <script>
-    var modal = document.getElementById("imageModal");
-    var modalImg = document.getElementById("img01");
-    var images = document.getElementsByClassName('teaser');
-
-    // Function to open modal
-    for (var i = 0; i < images.length; i++) {
-      images[i].onclick = function () {
-        modal.style.display = "flex"; // Changed from 'block' to 'flex'
-        modalImg.src = this.src;
-      }
+    function toggleNav(button) {
+      var links = document.getElementById('myLinks');
+      var isOpen = links.classList.toggle('responsive');
+      button.setAttribute('aria-expanded', isOpen);
+      button.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
     }
-
-    // Close when clicking the background
-    modal.onclick = function (event) {
-      if (event.target === modal || event.target.className === 'close') {
-        modal.style.display = "none";
-      }
-    }
-
-    // Close with ESC key
-    document.addEventListener('keydown', function (event) {
-      if (event.key === "Escape") {
-        modal.style.display = "none";
-      }
-    });
   </script>
 </body>
 

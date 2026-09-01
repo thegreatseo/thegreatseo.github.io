@@ -31,22 +31,22 @@
                   </strong>
                 </span>
                 <span class="talk-location">
-                  <i class="fa-solid fa-location-dot"></i> {{ talk.venue }}, {{ talk.city }}{% if talk.country %}, {{ talk.country }}{% endif %}
+                  {{ talk.venue }}, {{ talk.city }}{% if talk.country %}, {{ talk.country }}{% endif %}
                 </span>
               </div>
 
               <div class="talk-links">
                 {% if talk.notice %}
-                  <a href="{{ talk.notice }}" target="_blank"><i class="fa-solid fa-circle-info"></i> Notice</a>
+                  <a href="{{ talk.notice }}" target="_blank" rel="noopener">Notice</a>
                 {% endif %}
                 {% if talk.slide %}
-                  <a href="{{ "/assets/files/slides/" | append: talk.slide | relative_url }}" target="_blank"><i class="fa-solid fa-file-powerpoint"></i> Slides</a>
+                  <a href="{{ "/assets/files/slides/" | append: talk.slide | relative_url }}" target="_blank" rel="noopener">Slides</a>
                 {% endif %}
                 {% if talk.poster %}
-                  <a href="{{ talk.poster | relative_url }}" target="_blank"><i class="fa-solid fa-image"></i> Poster</a>
+                  <a href="{{ talk.poster | relative_url }}" target="_blank" rel="noopener">Poster</a>
                 {% endif %}
                 {% if talk.video %}
-                  <a href="{{ talk.video }}" target="_blank"><i class="fa-solid fa-video"></i> Video</a>
+                  <a href="{{ talk.video }}" target="_blank" rel="noopener">Video</a>
                 {% endif %}
               </div>
             </div>

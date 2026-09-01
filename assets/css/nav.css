@@ -1,87 +1,146 @@
-/* Main Navbar Background */
 .topnav {
-  background-color: #20212b; /* Forced to dark background */
-  opacity: 0.95;             /* Slightly higher opacity for better text contrast */
-  position: fixed;
+  position: sticky;
+  z-index: 1000;
   top: 0;
   width: 100%;
-  z-index: 999;
-  height: 60px;
-  border-bottom: 1px solid rgba(45, 106, 79, 0.2); /* Subtle emerald border */
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
+  background: color-mix(in srgb, var(--background) 92%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
-/* Centered Content Container */
 .nav-container {
-  max-width: 1100px; /* Matches your updated .wrapper width */
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 100%;
-  padding: 0 20px;
+  justify-content: flex-end;
+  width: min(1160px, calc(100% - 4rem));
+  height: 68px;
+  margin: 0 auto;
 }
 
-.nav-logo img {
-  height: 40px;
-  width: auto;
-  display: block;
-}
-
-/* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 1.7rem;
+  align-items: center;
 }
 
 .nav-links a {
-  color: #f2f2f2; /* Light gray text for dark background */
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: 500;
-  padding: 5px 10px;
-  transition: all 0.3s ease;
-}
-
-/* Active State - Highlighted in Muted Moss/Mint */
-.nav-links a.active {
-  color: #B7E4C7 !important; 
+  position: relative;
+  padding: 0.3rem 0;
+  color: var(--muted);
+  font-size: 0.78rem;
   font-weight: 600;
-  border-bottom: 2px solid #2D6A4F; 
+  letter-spacing: 0.055em;
+  text-decoration: none;
 }
 
-/* Hover effect for non-active links */
-.nav-links a:hover:not(.active) {
-  color: #95D5B2;
-  background-color: rgba(255, 255, 255, 0.05); /* Subtle dark hover highlight */
-  border-radius: 4px;
+.nav-links a::after {
+  position: absolute;
+  right: 0;
+  bottom: -0.1rem;
+  left: 0;
+  height: 1px;
+  background: var(--accent);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 180ms ease;
 }
 
-/* Hamburger icon for mobile - Forced to white */
-.topnav .icon {
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--ink);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-toggle {
   display: none;
-  color: white !important; 
-  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
 }
 
-/* --- Mobile View --- */
-@media screen and (max-width: 960px) {
+.nav-toggle span {
+  display: block;
+  width: 21px;
+  height: 1.5px;
+  margin: 4px 0;
+  background: currentColor;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(5.5px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-5.5px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+  .nav-container {
+    width: min(760px, calc(100% - 3rem));
+  }
+}
+
+@media (max-width: 680px) {
+  .nav-container {
+    width: calc(100% - 2rem);
+    height: 62px;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
   .nav-links {
-    display: none; 
-    flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: calc(100% + 1px);
+    right: 0;
     left: 0;
-    /* width: 100%; */
-    background-color: #20212b; /* Ensure mobile menu is also dark */
-    padding: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+    padding: 0.6rem 1rem 1rem;
+    border-bottom: 1px solid var(--line);
+    background: var(--background);
   }
 
   .nav-links.responsive {
-    display: flex; 
+    display: flex;
   }
 
-  .topnav .icon {
-    display: block; 
+  .nav-links a {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+  }
+
+  .nav-links a:last-child {
+    border-bottom: 0;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+}
+
+@media print {
+  .topnav {
+    display: none;
   }
 }

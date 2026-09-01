@@ -2,21 +2,11 @@
 layout: homepage
 ---
 
-## Hello!
+<div class="home-intro" markdown="1">
 
-I am a PhD student in mathematics working in **extremal combinatorics** and **graph theory**, with a particular interest in **graph homomorphism inequalities**.
+I am a PhD student in mathematics at [Yonsei University]({{ site.affiliation_link }}), supervised by [Joonkyung Lee](https://sites.google.com/site/joonkyungleemaths/). My research is in extremal combinatorics and graph theory, particularly graph homomorphism inequalities. I received my bachelor's degree in mathematics from [POSTECH](https://math.postech.ac.kr/en/).
+{: .intro-detail }
 
-I am currently at [Yonsei University]({{ site.affiliation_link }}), supervised by [Joonkyung Lee](https://sites.google.com/site/joonkyungleemaths/). I got a Bachelor's in Mathematics at [Pohang University of Science and Technology](https://math.postech.ac.kr/en/).
-
-
-
-
-<!-- ## Research Interests -->
-
-<!-- - **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning -->
-
-<!-- ## News -->
-
+</div>
 
 {% include_relative _includes/publications.md %}

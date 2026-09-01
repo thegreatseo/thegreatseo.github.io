@@ -1,18 +1,17 @@
 # Basic Information 
 title: Jaehyeon Seo
-position: PhD Student
+position: PhD Student in Mathematics
 affiliation: Yonsei University
 affiliation_link: https://math.yonsei.ac.kr/
 affiliation_country: South Korea
 email: jaehyeonseo@yonsei.ac.kr
-url: https://jaehyeonseo.com/
+url: https://jaehyeonseo.com
 baseurl: ""
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
 keywords: combinatorics graph theory mathematics Yonsei PhD student
-description: Jaehyeon Seo is a mathematics PhD student at Yonsei University, working in extremal combinatorics and graph theory.
-canonical: https://jaehyeonseo.com/
+description: Jaehyeon Seo is a PhD student in mathematics at Yonsei University, working in extremal combinatorics and graph theory.
 
 # Links 
 # If you don't need one of them, you may delete the corresponding line.
@@ -27,8 +26,8 @@ linkedin: https://www.linkedin.com/in/jaehyeon-seo-3a72a5141/
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
 avatar: /assets/img/portrait.jpg
-favicon: /assets/img/favicon.png
-favicon_dark: /assets/img/favicon-dark.png
+favicon: /assets/img/favicon.svg
+favicon_dark: /assets/img/favicon-dark.svg
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."

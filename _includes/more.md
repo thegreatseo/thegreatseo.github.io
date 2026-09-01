@@ -7,7 +7,7 @@ Below are the student seminars in which I am participating and/or co-organizing.
 
 ## Awards and Grants
 - International Joint Training Support of Outstanding Graduate Students in BK21FOUR: Jan 2026 – Jul 2026
-- Best student from the Brain Korea (BK) evaluation in the department: Spring 2024, Spring 2025
+- Best student from the Brain Korea (BK) evaluation in the department: Spring 2024, Spring 2025, Spring 2026
 - 2024 Spring Poster Presentation, School of Mathematics and Computing, Yonsei University: Excellence award 
 - POSTECH Department of Mathematics, Dean's list: Fall 2016, Spring 2017, Fall 2017, Spring 2019
 - 2016 POSTECH Programing Contest: Excellence prize
