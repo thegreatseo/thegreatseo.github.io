@@ -34,7 +34,7 @@
   margin: 0 0 0.42rem !important;
   color: var(--ink);
   font-family: var(--serif);
-  font-size: 1.28rem !important;
+  font-size: 1.32rem !important;
   font-weight: 600;
   letter-spacing: -0.012em;
   line-height: 1.28;
@@ -44,7 +44,7 @@
 .publication-venue {
   margin: 0 !important;
   color: var(--muted);
-  font-size: 0.83rem;
+  font-size: 0.88rem;
   line-height: 1.65;
 }
 
@@ -83,7 +83,7 @@
 .publication-links a,
 .talk-links a {
   color: var(--accent-deep);
-  font-size: 0.72rem;
+  font-size: 0.77rem;
   font-weight: 600;
   letter-spacing: 0.045em;
   text-decoration: none;
@@ -106,7 +106,7 @@
 .publication-journal,
 .publication-note {
   color: var(--muted);
-  font-size: 0.76rem;
+  font-size: 0.81rem;
   line-height: 1.55;
 }
 
@@ -127,7 +127,7 @@
   }
 
   .publication-title {
-    font-size: 1.15rem !important;
+    font-size: 1.2rem !important;
   }
 
   .publication-details {
