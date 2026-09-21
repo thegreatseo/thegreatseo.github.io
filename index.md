@@ -9,4 +9,6 @@ I am a PhD student in mathematics at [Yonsei University]({{ site.affiliation_lin
 
 </div>
 
+{% include_relative _includes/updates.md %}
+
 {% include_relative _includes/publications.md %}
