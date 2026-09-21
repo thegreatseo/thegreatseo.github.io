@@ -15,21 +15,19 @@
             </div>
             
             <div class="talk-content">
-              <h3 class="talk-title">{{ talk.title }}
+              <h3 class="talk-event">
+                {% if talk.event-link %}
+                  <a href="{{ talk.event-link }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a>
+                {% else %}
+                  {{ talk.event }}
+                {% endif %}
+              </h3>
+              <p class="talk-title">{{ talk.title }}
                 {% if talk.type %}
                     &nbsp;<span class="talk-badge">{{ talk.type }}</span>
                 {% endif %}
-              </h3>
+              </p>
               <div class="talk-metadata">
-                <span class="talk-event">
-                  <strong>
-                    {% if talk.event-link %}
-                      <a href="{{ talk.event-link }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a>
-                    {% else %}
-                      {{ talk.event }}
-                    {% endif %}
-                  </strong>
-                </span>
                 <span class="talk-location">
                   {{ talk.venue }}, {{ talk.city }}{% if talk.country %}, {{ talk.country }}{% endif %}
                 </span>
