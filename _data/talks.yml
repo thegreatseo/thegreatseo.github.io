@@ -16,6 +16,17 @@ main:
 
 # 2026
 
+- title: TBA
+  event: 2026 Combinatorics Workshop
+  venue: Konjiam Resort
+  city: Gwangju-Si, Gyeonggi-Do
+  country: Korea
+  date: October 20
+  year: 2026
+  event-link: https://cw2026.combinatorics.kr/en/
+  notice: https://cw2026.combinatorics.kr/en/schedule#:~:text=35%2D16%3A00-,Jaehyeon%20Seo,-Yonsei%20University
+  slide: 
+
 - title: Degree-sequence bounds for independent sets via multivariate local occupancy
   event: ASIACOMB 2026
   venue: Daejeon Convention Center
