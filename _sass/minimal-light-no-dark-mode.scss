@@ -219,7 +219,7 @@ button:focus-visible {
 .home-intro {
   position: relative;
   // max-width: 760px;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .intro-detail {
@@ -254,7 +254,12 @@ h6 {
   line-height: 1.15;
 }
 
+.updates-section {
+  margin-bottom: 4rem;
+}
+
 .page-content .updates-heading {
+  margin-top: 2rem;
   font-size: 1.3rem;
   font-weight: 500;
   color: #666;
