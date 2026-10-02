@@ -16,10 +16,21 @@ main:
 
 # 2026
 
+- title: Antiferromagnetic models are clique-minimizing
+  event: 2026 KMS Annual Meeting
+  venue: GIST
+  city: Gwangju
+  country: Korea
+  date: October 29
+  year: 2026
+  event-link: https://www.kms.or.kr/conference/2026_fall
+  notice: 
+  slide: 
+
 - title: TBA
   event: 2026 Combinatorics Workshop
   venue: Konjiam Resort
-  city: Gwangju-Si, Gyeonggi-Do
+  city: Gwangju, Gyeonggi
   country: Korea
   date: October 20
   year: 2026
