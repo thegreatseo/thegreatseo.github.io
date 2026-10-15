@@ -21,10 +21,10 @@ main:
   venue: GIST
   city: Gwangju
   country: Korea
-  date: October 29
+  date: October 31
   year: 2026
   event-link: https://www.kms.or.kr/conference/2026_fall
-  notice: 
+  notice: https://www.kms.or.kr/conference/meet/program/abst_view.html?period=94&session_detail=1188&num=10859
   slide: 
 
 - title: TBA
