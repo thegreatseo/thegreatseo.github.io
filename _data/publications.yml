@@ -1,5 +1,10 @@
 main:
 
+  - title: Fractional colorings of \(K_r\)-free graphs with local demands
+    authors: Ewan Davies, Abhishek Dhawan, Abhishek Methuku, Huy Nguyen, Jaehyeon Seo
+    arxiv: "2611.04297"
+    notes: Submitted
+
   - title: Antiferromagnetic models are clique-minimizing
     authors: Joonkyung Lee, Jaehyeon Seo
     arxiv: "2608.17920"

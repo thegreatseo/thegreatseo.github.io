@@ -1,5 +1,6 @@
 ---
 layout: homepage
+mathjax: true
 ---
 
 <div class="home-intro" markdown="1">
